@@ -1,0 +1,2 @@
+document = window.document;
+

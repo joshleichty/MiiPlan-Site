@@ -1,0 +1,124 @@
+/* reset all styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code
+{
+    all: unset;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    /* Use Inter font for all text */
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    font-size: 35px;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.hero {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url('hero.jpg');
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+nav img {
+    padding: 2rem;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    /* center in middle of page */
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+}
+
+header h2 {
+    font-size: 1rem;
+}
+
+.info-links {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+}
+
+.info-links button {
+    font-size: 1rem;
+    /* ios blue color */
+    background-color: #246AF1;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    /* add blue shadow */
+    box-shadow: 0 0.1rem 0.2rem rgba(36, 106, 241, 0.5);
+    cursor: pointer;
+}
+
+.info-links p {
+    color: white;
+    font-size: .5rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.info-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+.info-button-container img {
+    height: .4rem;
+    width: auto;
+    align-self: center;
+}
+
+.info-button-container button {
+    background-color: white;
+    box-shadow: none;
+    padding: 0;
+    color: black;
+    font-size: .6rem;
+    padding-left: .5rem;
+    cursor: pointer;
+}
+
+footer {
+    display: none;
+}
+
+.info-button-card {
+    position: absolute;
+    /* center in middle of page */
+    top: calc(50% - 250px);
+    left: calc(50% - 350px);
+    height: 500px;
+    width: 700px;
+    background-color: blue;
+}
